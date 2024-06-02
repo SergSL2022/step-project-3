@@ -37,6 +37,13 @@
 
 
 ### 4. Add to this balancer only first ec2 instance, it will contain Prometheus and Grafana
+![alt text](<screenshots/4/Знімок екрана з 2024-06-03 02-22-01.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-06-03 02-29-08.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-06-03 02-36-59.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-06-03 02-37-14.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-06-03 02-37-25.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-06-03 02-37-48.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-06-03 02-38-01.png>)
 
 
 ### 5. Write terraform code to generate ansible inventory file for the next step
