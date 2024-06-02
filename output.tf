@@ -43,15 +43,12 @@ output "default_security_group_id" {
   value = module.vpc.default_security_group_id
 }
 
-# output "EC2_observer_public_ip" {
-#     description = "Observer public IP address"
-#     value = aws_instance.observer.public_ip
-# }
+output "EC2_observer_public_ip" {
+    description = "Observer public IP address"
+    value = aws_instance.observer.public_ip
+}
 
-# output "EC2_target_public_ips" {
-#     description = "Targets public IP addresses"
-#     value = aws_instance.target[*].public_ip
-# }
-
-
-
+output "EC2_target_public_ips" {
+    description = "Targets public IP addresses"
+    value = aws_instance.target[*].public_ip
+}

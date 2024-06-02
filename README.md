@@ -18,6 +18,16 @@
 
 
 ### 2. Wrote terraform code which will create 3 ec2 with docker installed. Also it should add your public ssh key to ec2. So when you create ec2 with this module you can connect to it with command: ssh YOUR_USER@IP
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-11-51.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-12-14.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-12-59.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-13-31.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-14-09.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-15-40.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-15-49.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-16-30.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-16-53.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-06-02 22-17-03.png>)
 
 
 ### 3. Write terraform code which will create load balancer.
