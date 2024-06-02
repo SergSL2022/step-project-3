@@ -31,6 +31,9 @@
 
 
 ### 3. Write terraform code which will create load balancer.
+![alt text](<screenshots/3/Знімок екрана з 2024-06-02 23-42-23.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-06-02 23-42-39.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-06-02 23-42-54.png>)
 
 
 ### 4. Add to this balancer only first ec2 instance, it will contain Prometheus and Grafana

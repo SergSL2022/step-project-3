@@ -52,3 +52,8 @@ output "EC2_target_public_ips" {
     description = "Targets public IP addresses"
     value = aws_instance.target[*].public_ip
 }
+
+output "alb_dns_name" {
+  description = "The DNS name of the load balancer"
+  value       = aws_lb.slipchuk-alb.dns_name
+}
