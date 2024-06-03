@@ -47,6 +47,12 @@
 
 
 ### 5. Write terraform code to generate ansible inventory file for the next step
+![alt text](<screenshots/5/Знімок екрана з 2024-06-03 13-41-55.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-06-03 13-42-26.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-06-03 13-43-21.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-06-03 13-47-14.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-06-03 13-47-46.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-06-03 13-50-05.png>)
 
 
 ### 6. Using article: https://www.padok.fr/en/blog/prometheus-monitoring-ansible deploy software on these 3 ec2 instances automatically from terraform.
