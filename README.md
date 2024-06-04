@@ -56,6 +56,15 @@
 
 
 ### 6. Using article: https://www.padok.fr/en/blog/prometheus-monitoring-ansible deploy software on these 3 ec2 instances automatically from terraform.
+![alt text](<screenshots/6/Знімок екрана з 2024-06-04 22-55-32.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-06-04 22-56-58.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-06-04 22-58-49.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-06-04 23-04-31.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-06-04 23-05-56.png>)
 
 
 ### As a result you must be able to connect to Grafana via DNS name of LB from step 3, go to dashboard and see there 3 hosts metrics.
+![alt text](<screenshots/6/Знімок екрана з 2024-06-04 22-59-39.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-06-04 22-59-48.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-06-04 23-00-48.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-06-04 23-01-24.png>)

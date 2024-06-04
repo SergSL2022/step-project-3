@@ -11,3 +11,17 @@ resource "local_file" "ansible_inventory" {
 
   filename = "${path.module}/ansible/inventories/hosts.yml"
 }
+
+resource "null_resource" "ansible" {
+
+  provisioner "local-exec" {
+    working_dir = "${path.module}/ansible"
+    command     = <<EOT
+      sleep 60
+      ansible-playbook -i inventories/hosts.yml playbooks/monitoring.yml --vault-password-file vault_key.txt
+    EOT
+  }
+
+  depends_on = [local_file.ansible_inventory]
+
+}

@@ -28,6 +28,12 @@ variable "public_subnets_cidrs" {
     default = ["172.16.1.0/24", "172.16.2.0/24"]
 }
 
+variable "open_ports" {
+    description = "List of open ports"
+    type = list(number)
+    default = [22, 80, 443, 3000, 9090, 9093, 9100, 9101]
+}
+
 variable "owner" {
     description = "TAG: Owner"
     type = string
@@ -51,4 +57,3 @@ variable "target_instance_count" {
   type        = number
   default     = 2
 }
-

@@ -10,31 +10,23 @@ module "vpc" {
   map_public_ip_on_launch = true
 
   default_security_group_ingress = [
-    {
-      from_port        = 80
-      to_port          = 80
-      protocol         = "tcp"
-      cidr_blocks      = "0.0.0.0/0"
-      description      = "Open HTTP port"
-      self             = false
-    },
-    {
-      from_port        = 22
-      to_port          = 22
-      protocol         = "tcp"
-      cidr_blocks      = "0.0.0.0/0"
-      description      = "Open SSH port"
-      self             = false
+    for port in var.open_ports : {
+      from_port   = port
+      to_port     = port
+      protocol    = "tcp"
+      cidr_blocks = "0.0.0.0/0"
+      description = "Open port ${port}"
+      self        = false
     }
   ]
 
   default_security_group_egress = [{
-    from_port        = 0
-    to_port          = 0
-    protocol         = "-1"
-    cidr_blocks      = "0.0.0.0/0"
-    description      = "Allow all outbound traffic"
-    self             = false
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = "0.0.0.0/0"
+    description = "Allow all outbound traffic"
+    self        = false
   }]
 
   enable_nat_gateway = false

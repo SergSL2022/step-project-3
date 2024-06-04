@@ -41,7 +41,7 @@ resource "aws_lb" "slipchuk-alb" {
 
 resource "aws_lb_target_group" "slipchuk-tg" {
   name        = "${var.owner}-tg"
-  port        = 80
+  port        = 3000
   protocol    = "HTTP"
   vpc_id      = module.vpc.vpc_id
   target_type = "instance"
@@ -50,7 +50,7 @@ resource "aws_lb_target_group" "slipchuk-tg" {
   health_check {
     interval            = 30
     path                = "/"
-    port                = "80"
+    port                = "3000"
     protocol            = "HTTP"
     timeout             = 5
     healthy_threshold   = 2
@@ -68,7 +68,7 @@ resource "aws_lb_target_group" "slipchuk-tg" {
 resource "aws_lb_target_group_attachment" "slipchuk-tg-attachment" {
   target_group_arn = aws_lb_target_group.slipchuk-tg.arn
   target_id        = aws_instance.observer.id
-  port             = 80
+  port             = 3000
 }
 
 
